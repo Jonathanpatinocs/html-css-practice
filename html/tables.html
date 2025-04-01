@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS PRACTICE</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+<body>
+    <!-- Table Notes -->
+    <div id="table"> 
+        <h1>TABLES</h1>
+        <div id="table-notes">
+            <div id="table-html">
+                <h3>HTML</h3>
+                <ul>
+                    <li>tr - table row</li>
+                    <li>td - table data (cell)</li>
+                    <li>th - table head</li>
+                    <li>colspan = "$" - column span </li>
+                    <li>rowspan = "$" - row span </li>
+                    <h3 style="margin:0">structure</h3>
+                    <li>thead - table header</li>
+                    <li>tbody - table body</li>
+                    <li>tfoot - table footer</li>
+                    <h3 style="margin:0">Accessibility</h3>
+                    <li>caption - table caption</li>
+                    <li>scope - added to th to tell what the header is for (col, row, colgroup, rowgroup)</li>
+
+                </ul>
+            </div>
+            <div id="table-css">
+                <h3>CSS</h3>
+                <ul>
+                    <li>border-collapse - cells share the same border</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Table Practice-->
+        <h2>practice</h2>
+        <table> <!-- Dog Table (table 1)-->
+            <caption>Dogs</caption>
+            <tr>
+                <td></td>
+                <th>Knocky</th>
+                <th>Flor</th>
+                <th>Ella</th>
+                <th>Juan</th>
+            </tr>
+            <tr>
+                <th>Breed</th>
+                <td>Jack Russell</td>
+                <td>Poodle</td>
+                <td>Streetdog</td>
+                <td>Cocker Spaniel</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>16</td>
+                <td>9</td>
+                <td>10</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>Owner</th>
+                <td>Mother-in-law</td>
+                <td>Me</td>
+                <td>Me</td>
+                <td>Sister-in-law</td>
+            </tr>
+            <tr>
+                <th>Eating Habits</th>
+                <td>Eats everyone's leftovers</td>
+                <td>Nibbles at food</td>
+                <td>Hearty eater</td>
+                <td>Will eat till he explodes</td>
+            </tr>
+        </table> 
+
+        <table> <!-- Animeal Table (table 2)-->
+            <caption>Animals</caption>
+            <tr><th colspan="2">Animals</th></tr>
+            <tr><th colspan="2">Hippopotamus</th></tr>
+            <tr>
+                <th rowspan="2">Horse</th>
+                <td>Mare</td>
+            </tr>
+            <tr><td>Stallion</td></tr>
+            <tr><th colspan="2">Crocodile</th></tr>
+            <tr>
+                <th rowspan="2">Chicken</th>
+                <td>Hen</td>
+            </tr>
+            <tr><td>Rooster</td></tr>
+        </table>
+
+        <table id="table3"> <!-- Spending Table (table 3)-->
+            <caption>How I chose to spend my money</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Purchase</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Evaluation</th>
+                    <th scope="col">Cost ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Haircut</td>
+                    <td>Hairdresser</td>
+                    <td>12/09</td>
+                    <td>Great idea</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Lasagna</td>
+                    <td>Restaurant</td>
+                    <td>12/09</td>
+                    <td>Regrets</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Shoes</td>
+                    <td>Shoeshop</td>
+                    <td>13/09</td>
+                    <td>Big Regrets</td>
+                    <td>65</td>
+                </tr>
+                <tr>
+                    <td>Toothpaste</td>
+                    <td>Supemarket</td>
+                    <td>13/09</td>
+                    <td>Good</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4">SUM</th>
+                    <td>118</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <table id="table4"> <!-- Planets Table (table 4)-->
+            <caption>Planets Data</caption>
+            <thead>
+                <tr>
+                    <td colspan="2"></td>
+                    <th scope="col" class="planet-name">Name</th>
+                    <th scope="col">Mass <br> (10^24 kg)</th>
+                    <th scope="col">Diameter <br> (km)</th>
+                    <th scope="col">Density <br> (kg/m^3)</th>
+                    <th scope="col">Gravity <br> (m/s2)</th>
+                    <th scope="col">Length of day <br> (hours)</th>
+                    <th scope="col">Distance from Sun <br> (106km)</th>
+                    <th scope="col">Mean temperature <br> (°C)</th>
+                    <th scope="col">Number of moons</th>
+                    <th scope="col">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="2" rowspan="4" scope="rowgroup">Terrestrial Planets</th>
+                    <th scope="row" class="planet-name">Mercury</th>
+                    <td>0.330</td>
+                    <td>4,879</td>
+                    <td>5427</td>
+                    <td>3.7</td>
+                    <td>4222.6</td>
+                    <td>57.9</td>
+                    <td>167</td>
+                    <td>0</td>
+                    <td>Closest to the sun</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="planet-name">Venus</th>
+                    <td>4.87</td>
+                    <td>12,104</td>
+                    <td>5243</td>
+                    <td>8.9</td>
+                    <td>2802.0</td>
+                    <td>108.2</td>
+                    <td>464</td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="planet-name">Earth</th>
+                    <td>5.97</td>
+                    <td>12,756</td>
+                    <td>5514</td>
+                    <td>9.8</td>
+                    <td>24.0</td>
+                    <td>149.6</td>
+                    <td>15</td>
+                    <td>1</td>
+                    <td>Our world</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="planet-name">Mars</th>
+                    <td>0.642</td>
+                    <td>6,792</td>
+                    <td>3933</td>
+                    <td>3.7</td>
+                    <td>24.7</td>
+                    <td>227.9</td>
+                    <td>-65</td>
+                    <td>2</td>
+                    <td>The red Planet</td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="4">Jovain Planets</th>
+                    <th scope="rowgroup" rowspan="2">Gas Giants</th>
+                    <th scope="row" class="planet-name">Jupiter</th>
+                    <td>1898</td>
+                    <td>142,984</td>
+                    <td>1326</td>
+                    <td>23.1</td>
+                    <td>9.9</td>
+                    <td>778.6</td>
+                    <td>-110</td>
+                    <td>67</td>
+                    <td>The largest planet</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="planet-name">Saturn</th>
+                    <td>568</td>
+                    <td>120,536</td>
+                    <td>687</td>
+                    <td>9.0</td>
+                    <td>10.7</td>
+                    <td>1433.5</td>
+                    <td>-140</td>
+                    <td>62</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="2">Ice Giants</th>
+                    <th scope="row" class="planet-name">Uranus</th>
+                    <td>86.8</td>
+                    <td>51,118</td>
+                    <td>1271</td>
+                    <td>8.7</td>
+                    <td>17.2</td>
+                    <td>2872.5</td>
+                    <td>-195</td>
+                    <td>27</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="planet-name">Neptune</th>
+                    <td>102</td>
+                    <td>49,528</td>
+                    <td>1628</td>
+                    <td>11.0</td>
+                    <td>16.1</td>
+                    <td>4495.1</td>
+                    <td>-200</td>
+                    <td>14</td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="2">Dwarf planets</th>
+                    <th scope="row" class="planet-name">Pluto</th>
+                    <td>0.0146</td>
+                    <td>2,370</td>
+                    <td>2095</td>
+                    <td>0.7</td>
+                    <td>153.3</td>
+                    <td>5906.4</td>
+                    <td>-225</td>
+                    <td>5</td>
+                    <td>Declassified as a planet in 2006, but this remains controversial.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
