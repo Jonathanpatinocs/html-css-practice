@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS UNITS</title>
+    <link rel="stylesheet" href="units.css">
+</head>
+<body>
+    
+    <h1 style="text-align: center;">CSS Units</h1>
+    <div id="absolute">
+        <h2>Absolute Units</h2>
+        <p>Always the same in any context</p>
+        <ul>
+            <li>px - pixels <span style="font-size: 20px;">(this is an example of 20 pixels)</span></li>
+            <li>in - inch</li>
+            <li>cm - centimeter</li>
+        </ul>
+    </div>
+    <div id="relative">
+        <h2>Relative Units</h2>
+        <p>Change in any context</p>
+        <ul>
+            <li >em - font size of an element (example: font-size is 10px so 1em is 10px and 2em is 20px) 
+                <span> 
+                    <div style="border: solid 1px; width: 10em; font-size: 10px;">this is a box width of 10em and font-size of 10 pixels</div>
+                </span>
+            </li>
+            <li>rem - font size of the root element, either :root or html (reccomended) <span> 
+                <div style="border: solid 1px; width: 10rem; font-size: 10px;">this is a box width of 10rem and font-size of 10 pixels</div>
+            </span></li>
+        </ul>
+    </div>
+    <div id="viewport">
+        <h2>Viewport units</h2>
+        <p>relate to size of viewport</p>
+        <ul>
+            <li>vh - view height, 1vh = 1%<span style="font-size: 5vh;">This is an example of 5vh</span></li>
+            <li>vw - view width 1vw = 1% <span style="font-size: 5vw;">This is an example of 5vw</span></li>
+        </ul>
+    </div>
+</body>
+</html>
